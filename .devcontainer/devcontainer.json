@@ -1,0 +1,14 @@
+{
+  "name": "typescript",
+  "dockerFile": "Dockerfile",
+  "remoteUser": "node",
+  "mounts": [
+    "source=skiller-piral-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ],
+  "postCreateCommand": "sudo chown node node_modules",
+  "extensions": [
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}

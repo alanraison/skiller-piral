@@ -1,0 +1,33 @@
+{
+  "name": "skiller-piral",
+  "version": "1.0.0",
+  "description": "Piralised SkillerWhale app",
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "lerna": "^4.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4 || ^3 || ^2.3.0 || ^1.7.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.1",
+    "prettier": "2.3.2"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
